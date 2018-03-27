@@ -1,5 +1,5 @@
 FROM kyokuheki:docker-pandoc
-LABEL maintainer Kenzo Okuda <okuda.kenzo@nttv6.net>
+LABEL maintainer Kyokuheki <kyokuheki@gmail.com>
 
 COPY assets/header.tex /pandoc/header.tex
 COPY assets/template.tex /pandoc/template.tex
