@@ -2,7 +2,7 @@
 Containerized PDF builder from pdfs and markdown files using pandoc and ghostscript
 
 ## Usage
-Ge usage
+Get usage
 
 ```sh
 docker run -it --rm -v $PWD:/src kyokuheki/pandoc-typeset typeset -h
