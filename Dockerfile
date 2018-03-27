@@ -1,4 +1,4 @@
-FROM kyokuheki:docker-pandoc
+FROM kyokuheki/pandoc
 LABEL maintainer Kyokuheki <kyokuheki@gmail.com>
 
 COPY assets/header.tex /pandoc/header.tex
