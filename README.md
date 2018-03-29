@@ -26,6 +26,12 @@ Execute pandoc
 docker run -it --rm -v $PWD:/src kyokuheki/pandoc pandoc [arguments]...
 ```
 
+Convert markdown files into html5
+
+```sh
+docker run -it --rm -v $PWD:/src kyokuheki/pandoc pandoc *.md -o test.html -t html5 --standalone --self-contained
+```
+
 Enter the console
 
 ```sh
