@@ -1,4 +1,7 @@
 # docker-pandoc-typeset
+[![](https://images.microbadger.com/badges/version/kyokuheki/pandoc-typeset.svg)](https://microbadger.com/images/kyokuheki/pandoc-typeset "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/kyokuheki/pandoc-typeset.svg)](https://microbadger.com/images/kyokuheki/pandoc-typeset "Get your own image badge on microbadger.com")
+
 Containerized PDF builder from pdfs and markdown files using pandoc and ghostscript
 
 ## Usage
