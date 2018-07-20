@@ -29,19 +29,19 @@ docker run -it --rm -v $PWD:/src kyokuheki/pandoc-typeset draft *.md
 Execute pandoc
 
 ```sh
-docker run -it --rm -v $PWD:/src kyokuheki/pandoc pandoc [arguments]...
+docker run -it --rm -v $PWD:/src kyokuheki/pandoc-typeset pandoc [arguments]...
 ```
 
 Convert markdown files into html5
 
 ```sh
-docker run -it --rm -v $PWD:/src kyokuheki/pandoc pandoc *.md -o test.html -t html5 --standalone --self-contained
+docker run -it --rm -v $PWD:/src kyokuheki/pandoc-typeset pandoc *.md -o test.html -t html5 --standalone --self-contained
 ```
 
 Enter the console
 
 ```sh
-docker run -it --rm -v $PWD:/src --entrypoint bash kyokuheki/pandoc
+docker run -it --rm -v $PWD:/src --entrypoint bash kyokuheki/pandoc-typeset
 ```
 
 ## Preset Configurations
