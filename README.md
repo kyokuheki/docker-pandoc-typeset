@@ -48,6 +48,7 @@ docker run -it --rm -v $PWD:/src --entrypoint bash kyokuheki/pandoc-typeset
 - mainfont: TeX Gyre Termes (Ligatures=TeX,Scale=0.95)
 - sansfont: TeX Gyre Heros (Ligatures=TeX,Scale=0.95)
 - monofont: Inconsolatazi4
+- mathfont: XITS Math
 - luatexja-preset: noto-otf
 - documentclass: ltjsarticle
 - from: markdown_github+raw_tex
