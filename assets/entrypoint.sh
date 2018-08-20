@@ -81,7 +81,7 @@ elif [ "x$1" = "xtypeset" -a -z "$wantHelp" ]; then
         gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.9 -dPDFSETTINGS=$dPDFSETTINGS -sOutputFile=final.pdf $PDFs body.pdf
     fi
 elif [ "x$1" = 'xsh' ]; then
-    exec sh
+    exec bash
 else
     exec "$@"
 fi
