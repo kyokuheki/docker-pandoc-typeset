@@ -48,18 +48,16 @@ _EOT_
 fi
 
 # execute pandoc
-if [ "$1" = "pandoc" -a -z "$wantHelp" ]; then
+if [ "x$1" = "xpandoc" -a -z "$wantHelp" ]; then
     exec "$@"
-fi
 
 # draft
-if [ "$1" = "draft" ]; then
+elif [ "x$1" = "xdraft" ]; then
     shift
     exec /usr/bin/pandoc -o body.pdf $PANDOC_OPTS "$@"
-fi
 
 # execute pandoc
-if [ "$1" = "typeset" -a -z "$wantHelp" ]; then
+elif [ "x$1" = "xtypeset" -a -z "$wantHelp" ]; then
     shift
 
     #if [ "${1:0:1}" = '-' ]; then
@@ -82,4 +80,8 @@ if [ "$1" = "typeset" -a -z "$wantHelp" ]; then
     else
         gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.9 -dPDFSETTINGS=$dPDFSETTINGS -sOutputFile=final.pdf $PDFs body.pdf
     fi
+elif [ "x$1" = 'xsh' ]; then
+    exec sh
+else
+    exec "$@"
 fi
