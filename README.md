@@ -41,6 +41,8 @@ docker run -it --rm -v $PWD:/src kyokuheki/pandoc-typeset pandoc *.md -o test.ht
 Enter the console
 
 ```sh
+docker run -it --rm -v $PWD:/src kyokuheki/pandoc-typeset bash
+# or
 docker run -it --rm -v $PWD:/src --entrypoint bash kyokuheki/pandoc-typeset
 ```
 
