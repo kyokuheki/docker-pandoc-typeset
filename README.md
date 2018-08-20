@@ -26,6 +26,12 @@ Convert markdown files into body.pdf
 docker run -it --rm -v $PWD:/src kyokuheki/pandoc-typeset draft *.md
 ```
 
+Convert markdown files into body.pdf with ltjsbook
+
+```
+docker run -it --rm -v $PWD:/src -e DOCUMENT_CLASS=ltjsbook kyokuheki/pandoc-typeset draft *.md
+```
+
 Execute pandoc
 
 ```sh
