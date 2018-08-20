@@ -4,7 +4,7 @@ set -eo pipefail
 shopt -s nullglob
 
 PROGNAME=ts
-PANDOC_OPTS="-s --verbose --from markdown_github+raw_tex --pdf-engine=lualatex --template=/pandoc/template.tex --include-in-header=/pandoc/header.tex -N --toc --toc-depth=2 -V documentclass=ltjsarticle -V geometry:margin=3cm -V papersize=a4 -V luatexjapresetoptions=noto-otf -V 'mainfont=TeXGyreTermes' -V mainfontoptions=Ligatures=TeX,Scale=0.95 -V 'sansfont=TeXGyreHeros' -V sansfontoptions=Ligatures=TeX,Scale=0.95 -V monofont=Inconsolatazi4 -V mathfont=XITSMath"
+PANDOC_OPTS="-s --verbose --from markdown_github+raw_tex --pdf-engine=lualatex --template=/pandoc/template.tex --include-in-header=/pandoc/header.tex -N --toc --toc-depth=2 -V documentclass=${DOCUMENT_CLASS:-ltjsarticle} -V geometry:margin=3cm -V papersize=a4 -V luatexjapresetoptions=noto-otf -V 'mainfont=TeXGyreTermes' -V mainfontoptions=Ligatures=TeX,Scale=0.95 -V 'sansfont=TeXGyreHeros' -V sansfontoptions=Ligatures=TeX,Scale=0.95 -V monofont=Inconsolatazi4 -V mathfont=XITSMath"
 
 # skip setup if they want an option that stops
 wantHelp=
