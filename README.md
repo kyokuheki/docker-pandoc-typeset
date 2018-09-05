@@ -41,7 +41,7 @@ docker run -it --rm -v $PWD:/src kyokuheki/pandoc-typeset pandoc [arguments]...
 Convert markdown files into html5
 
 ```sh
-docker run -it --rm -v $PWD:/src kyokuheki/pandoc-typeset pandoc *.md -o test.html -t html5 --standalone --self-contained
+docker run -it --rm -v $PWD:/src kyokuheki/pandoc-typeset pandoc *.md -o test.html -t html5 --standalone --self-contained --metadata pagetitle="your_page_title"
 ```
 
 Enter the console
